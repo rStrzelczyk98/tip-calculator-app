@@ -94,11 +94,13 @@ function inputValidation(input, value) {
 
 // error
 function error(el, msg) {
+  el.ariaInvalid = true;
   el.classList.add('error');
   const error = el.parentElement.querySelector('p');
   error.textContent = msg;
 }
 function valid(el) {
+  el.ariaInvalid = false;
   el.classList.remove('error');
   const error = el.parentElement.querySelector('p');
   error.textContent = '';

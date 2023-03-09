@@ -14,8 +14,15 @@
       <form action="" class="calculator">
         <div class="field">
           <label for="bill">Bill</label>
-          <p class="error" id="err1"></p>
-          <input type="text" name="bill" id="bill" placeholder="0" />
+          <p class="error" id="err1" aria-live="assertive"></p>
+          <input
+            type="text"
+            name="bill"
+            id="bill"
+            placeholder="0"
+            aria-errormessage="err1"
+            aria-invalid="false"
+          />
         </div>
         <fieldset class="field radio-grid">
           <legend>Select Tip %</legend>
@@ -35,13 +42,22 @@
             name="custom"
             id="custom"
             placeholder="Custom"
+            aria-errormessage="err2"
+            aria-invalid="false"
           />
-          <p class="error" id="err2"></p>
+          <p class="error" id="err2" aria-live="assertive"></p>
         </fieldset>
         <div class="field">
           <label for="people">Number of People</label>
-          <p class="error" id="err3"></p>
-          <input type="text" name="people" id="people" placeholder="0" />
+          <p class="error" id="err3" aria-live="assertive"></p>
+          <input
+            type="text"
+            name="people"
+            id="people"
+            placeholder="0"
+            aria-errormessage="err3"
+            aria-invalid="false"
+          />
         </div>
         <div class="output">
           <div class="tip-amount">

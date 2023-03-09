@@ -14,6 +14,7 @@ form.addEventListener('reset', () => {
   valid(bill);
   valid(custom);
   valid(people);
+  display();
 });
 form.addEventListener('input', e => {
   if (e.target.name === 'bill') {

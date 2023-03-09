@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <script defer src="script.js"></script>
+    <title>SPLITTER</title>
+  </head>
+  <body>
+    <img src="images/logo.svg" alt="SPLITTER" class="logo" />
+    <main class="container">
+      <form action="" class="calculator">
+        <div class="field">
+          <label for="bill">Bill</label>
+          <p class="error" id="err1"></p>
+          <input type="text" name="bill" id="bill" placeholder="0" />
+        </div>
+        <fieldset class="field radio-grid">
+          <legend>Select Tip %</legend>
+          <input type="radio" name="tip" id="val1" value="0.05" />
+          <label class="radio radio-label" for="val1">5%</label>
+          <input type="radio" name="tip" id="val2" value="0.10" />
+          <label class="radio radio-label" for="val2">10%</label>
+          <input type="radio" name="tip" id="val3" value="0.15" />
+          <label class="radio radio-label" for="val3">15%</label>
+          <input type="radio" name="tip" id="val4" value="0.25" />
+          <label class="radio radio-label" for="val4">25%</label>
+          <input type="radio" name="tip" id="val5" value="0.5" />
+          <label class="radio radio-label" for="val5">50%</label>
+          <input
+            class="radio"
+            type="text"
+            name="custom"
+            id="custom"
+            placeholder="Custom"
+          />
+          <p class="error" id="err2"></p>
+        </fieldset>
+        <div class="field">
+          <label for="people">Number of People</label>
+          <p class="error" id="err3"></p>
+          <input type="text" name="people" id="people" placeholder="0" />
+        </div>
+        <div class="output">
+          <div class="tip-amount">
+            <p>Tip Amount<span>/ person</span></p>
+            <p>$0.00</p>
+          </div>
+          <div class="total">
+            <p>Total<span>/ person</span></p>
+            <p>$0.00</p>
+          </div>
+          <button class="btn" type="reset">reset</button>
+        </div>
+      </form>
+    </main>
+    <footer class="attribution">
+      <p>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://github.com/rStrzelczyk98" target="_blank"
+          >Robert Strzelczyk</a
+        >.
+      </p>
+    </footer>
+  </body>
+</html>

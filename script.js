@@ -28,8 +28,8 @@ form.addEventListener('input', e => {
     tipVal = tipVal / 100;
   }
   if (e.target.name === 'tip') {
-    valid(document.getElementById('val6'));
-    document.getElementById('val6').value = '';
+    valid(custom);
+    custom.value = '';
     tipVal = tipValue();
   }
   display();

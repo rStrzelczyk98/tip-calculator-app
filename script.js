@@ -1,9 +1,11 @@
 'use strict';
+
 const bill = document.getElementById('bill');
 const custom = document.getElementById('custom');
 const people = document.getElementById('people');
 
 const form = document.querySelector('.calculator');
+const radio = document.querySelectorAll('.radio-label');
 
 let billVal;
 let tipVal;
@@ -35,21 +37,30 @@ form.addEventListener('input', e => {
   }
   display();
 });
+// keybord
+radio.forEach(el => {
+  el.addEventListener('focus', e => {
+    e.target.addEventListener('keydown', e => {
+      if (e.keyCode === 13) {
+        unselect();
+        document.getElementById(
+          `${e.target.getAttribute('for')}`
+        ).checked = true;
+      } else return;
+    });
+  });
+});
 
 function unselect() {
   const tip = document.querySelectorAll('input[name="tip"]');
-  tip.forEach(el => {
-    el.checked = false;
-  });
+  tip.forEach(el => (el.checked = false));
 }
 
 function tipValue() {
   const tip = document.querySelectorAll('input[name="tip"]');
   let checked;
   tip.forEach(el => {
-    if (el.checked) {
-      checked = el.value;
-    }
+    if (el.checked) checked = el.value;
   });
   return Number(checked);
 }
@@ -69,7 +80,7 @@ function display() {
   }
 }
 
-// validation
+// input validation
 function check(input) {
   if (input.name === 'people') {
     const pattern = /^\d*$/;
@@ -93,7 +104,7 @@ function inputValidation(input, value) {
   }
 }
 
-// error
+// error / valid
 function error(el, msg) {
   el.ariaInvalid = true;
   el.classList.add('error');

@@ -20,6 +20,8 @@
             name="bill"
             id="bill"
             placeholder="0"
+            maxlength="5"
+            aria-label="Write here bill value."
             aria-errormessage="err1"
             aria-invalid="false"
           />
@@ -27,21 +29,53 @@
         <fieldset class="field radio-grid">
           <legend>Select Tip %</legend>
           <input type="radio" name="tip" id="val1" value="0.05" />
-          <label class="radio radio-label" for="val1">5%</label>
+          <label
+            class="radio radio-label"
+            for="val1"
+            tabindex="0"
+            aria-label="5% tip"
+            >5%</label
+          >
           <input type="radio" name="tip" id="val2" value="0.10" />
-          <label class="radio radio-label" for="val2">10%</label>
+          <label
+            class="radio radio-label"
+            for="val2"
+            tabindex="0"
+            aria-label="10% tip"
+            >10%</label
+          >
           <input type="radio" name="tip" id="val3" value="0.15" />
-          <label class="radio radio-label" for="val3">15%</label>
+          <label
+            class="radio radio-label"
+            for="val3"
+            tabindex="0"
+            aria-label="15% tip"
+            >15%</label
+          >
           <input type="radio" name="tip" id="val4" value="0.25" />
-          <label class="radio radio-label" for="val4">25%</label>
+          <label
+            class="radio radio-label"
+            for="val4"
+            tabindex="0"
+            aria-label="25% tip"
+            >25%</label
+          >
           <input type="radio" name="tip" id="val5" value="0.5" />
-          <label class="radio radio-label" for="val5">50%</label>
+          <label
+            class="radio radio-label"
+            for="val5"
+            tabindex="0"
+            aria-label="50% tip"
+            >50%</label
+          >
           <input
             class="radio"
             type="text"
             name="custom"
             id="custom"
             placeholder="Custom"
+            maxlength="3"
+            aria-label="Write here custom tip value."
             aria-errormessage="err2"
             aria-invalid="false"
           />
@@ -55,6 +89,8 @@
             name="people"
             id="people"
             placeholder="0"
+            maxlength="2"
+            aria-label="Write here number of people."
             aria-errormessage="err3"
             aria-invalid="false"
           />

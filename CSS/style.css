@@ -127,6 +127,9 @@ input[name='people'] {
   background-color: var(--veryDarkCyan);
   margin: 0;
 }
+.radio-field {
+  min-width: max-content;
+}
 
 input[type='radio'] {
   display: none;
@@ -135,9 +138,10 @@ input[type='radio']:checked + .radio-label {
   color: var(--veryDarkCyan);
   background-color: var(--strongCyan);
 }
-input[type='radio']:checked + .radio-label:is(:hover),
-.radio-label:is(:hover) {
+input[type='radio']:checked + .radio-label:is(:hover, :focus),
+.radio-label:is(:hover, :focus) {
   cursor: pointer;
+  outline: transparent;
   color: var(--veryDarkCyan);
   background-color: var(--lightGrayishCyan);
 }

@@ -46,6 +46,7 @@ radio.forEach(el => {
         const tip = document.getElementById(`${e.target.getAttribute('for')}`);
         tip.checked = true;
         tipVal = Number(tip.value);
+        display();
       } else return;
     });
   });

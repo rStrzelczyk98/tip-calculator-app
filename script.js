@@ -43,6 +43,8 @@ radio.forEach(el => {
     e.target.addEventListener('keydown', e => {
       if (e.keyCode === 13) {
         unselect();
+        valid(custom);
+        custom.value = '';
         const tip = document.getElementById(`${e.target.getAttribute('for')}`);
         tip.checked = true;
         tipVal = Number(tip.value);

@@ -23,11 +23,21 @@ body {
   min-height: 100vh;
   display: grid;
   align-items: center;
+  overflow-x: hidden;
+}
+
+header {
+  justify-self: center;
+}
+
+h1 {
+  color: var(--veryDarkCyan);
+  font-size: 3rem;
+  letter-spacing: 4px;
 }
 
 .logo {
-  justify-self: center;
-  margin-block: 3rem;
+  padding-block: 3rem;
 }
 
 .container {

@@ -240,6 +240,12 @@ input.error:is(:hover, :focus) {
     max-width: 50rem;
     grid-template-columns: repeat(2, 1fr);
   }
+  .radio-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  input[type='text']::placeholder {
+    font-size: 1.2rem;
+  }
   .field {
     grid-column: 1/2;
   }

@@ -14,7 +14,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: [SPLITTER]()
+- Live Site URL: [splitter app](https://rstrzelczyk98.github.io/tip-calculator-app/)
 
 ## Built with
 

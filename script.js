@@ -43,9 +43,9 @@ radio.forEach(el => {
     e.target.addEventListener('keydown', e => {
       if (e.keyCode === 13) {
         unselect();
-        document.getElementById(
-          `${e.target.getAttribute('for')}`
-        ).checked = true;
+        const tip = document.getElementById(`${e.target.getAttribute('for')}`);
+        tip.checked = true;
+        tipVal = Number(tip.value);
       } else return;
     });
   });

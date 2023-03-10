@@ -27,6 +27,7 @@ body {
 }
 
 header {
+  align-self: end;
   justify-self: center;
 }
 
@@ -124,7 +125,7 @@ input[name='people'] {
 }
 .radio-grid > p {
   margin-top: -1rem;
-  grid-column: 2/4;
+  grid-column: 2/3;
 }
 .radio {
   font-size: 1.5rem;
@@ -242,6 +243,9 @@ input.error:is(:hover, :focus) {
   }
   .radio-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .radio-grid > p {
+    grid-column: 2/4;
   }
   input[type='text']::placeholder {
     font-size: 1.2rem;
